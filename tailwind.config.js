@@ -1,0 +1,46 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './index.html',
+    './App.tsx',
+    './main.tsx',
+    './components/**/*.{ts,tsx}',
+    './context/**/*.{ts,tsx}',
+    './lib/**/*.{ts,tsx}',
+    './mock/**/*.{ts,tsx}',
+    './pages/**/*.{ts,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        bg: '#0a0b0f',
+        surface: '#12131a',
+        'surface-2': '#181a23',
+        'surface-3': '#20222d',
+        border: '#262832',
+        'border-soft': '#1d1f28',
+        text: '#f2f3f7',
+        'text-muted': '#9a9db0',
+        'text-faint': '#6b6e80',
+        red: '#ff3b5c',
+        'red-dim': 'rgba(255, 59, 92, 0.16)',
+        magenta: '#c026d3',
+        'magenta-dim': 'rgba(192, 38, 211, 0.16)',
+        warning: '#f5a524',
+        'warning-dim': 'rgba(245, 165, 36, 0.16)',
+        success: '#22c55e',
+        'success-dim': 'rgba(34, 197, 94, 0.16)',
+        blue: '#3b82f6',
+        'blue-dim': 'rgba(59, 130, 246, 0.16)',
+        info: '#38bdf8',
+        'info-dim': 'rgba(56, 189, 248, 0.16)',
+      },
+      fontFamily: {
+        display: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+      },
+    },
+  },
+  plugins: [],
+};
